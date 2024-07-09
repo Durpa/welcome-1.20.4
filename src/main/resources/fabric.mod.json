@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "welcome",
+	"version": "${version}",
+	"name": "welcome",
+	"description": "welcome welcome welcome welcome welcome",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/welcome/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"net.durpa.welcome.WelcomeClient"
+		],
+		"fabric-datagen": [
+			"net.durpa.welcome.WelcomeDataGenerator"
+		]
+	},
+	"mixins": [
+		"welcome.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
